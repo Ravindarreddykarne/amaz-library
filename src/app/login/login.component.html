@@ -1,0 +1,85 @@
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<img src="{{image1}}" class="img1">
+<div class="container">    
+    <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+        <div class="panel panel-info" >
+                <div class="panel-heading">
+                    <div class="panel-title">Sign In</div>
+            
+                </div>     
+
+                <div  class="panel-body">
+
+    
+                  <div id="liginform">
+                                
+             <div class="input-group">
+    <input type="text"   class="form-control" id="username" value="" placeholder="username or email" 
+    ></div>  
+                
+             <div  class="input-group">
+   <input type="password" value="" class="form-control" id="password" placeholder="password"  required >
+             </div>
+                <div class="panel-heading">
+                <div  class="forgot" ><a href="#">Forgot password?</a></div> 
+
+             
+                <div class="input-group">
+                    <div class="checkbox">                     
+  <label><input id="login-remember" type="checkbox" name="remember" value="1"> Remember me </label>               </div>
+             </div>
+                           <div  class="form-group">
+                              <div class="col-sm-12 controls">
+                                 
+
+<a id="btn-login" href="#" class="btn btn-success" name="submit" value="login"   type="submit" onclick="validate()">Login </a>
+        <a id="btn-fblogin" href="#" value="login" class="btn btn-primary"  onclick="validate()" >Login with Facebook</a>
+                             </div>
+                            </div>     
+
+                               
+                                                  
+
+                        <div class="form-group">
+                              <div class="col-md-12 control">
+                                    <div class="ravi">
+                                        Don't have an account! 
+                                    <a href="#">
+                                        Sign Up Here
+                                    </a>
+                                    </div>
+                                </div>
+                        </div>                       
+                      </div>
+     
+                      </div> 
+                   </div>  
+             </div>
+            </div>
+
+            <script type="text/javascript">
+	
+	
+              function validate(){
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+              if ( username == "admin@123" && password == "9642939983"){
+              
+              window.location = "/dashboard"; 
+              return false;
+              }
+               else{
+                  alert("Invalid username or password");
+                  }
+              }
+              
+              // function load(url)
+              // {
+              //     location href=url;
+              // }
+              
+              </script>
+                  
